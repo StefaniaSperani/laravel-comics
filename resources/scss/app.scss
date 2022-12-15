@@ -1,11 +1,11 @@
+@use './partials/variables' as *;
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import './partials/variables';
 
 
 body{
     font-family: $main_font;
-    color: $black;
+    color: #fff;
 
 
     
@@ -42,6 +42,49 @@ body{
                 }
             }
         }
+    }
+
+    footer {
+        background-image: url(../img/footer-bg.jpg);
+        min-height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .list {
+            display: flex;
+            height: 100%;
+        }
+        .title {
+            font-size: 1.5em;
+            line-height: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .list>ul {
+            padding: 1.7em;
+        }
+        li {
+            list-style: none;
+            line-height: 1.5em;
+            text-decoration: none;
+            color: $icons;
+        }
+    }
+    .imageFooter {
+        width: 600px;
+        height: 430px;
+        background-image: url(../img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     
 
